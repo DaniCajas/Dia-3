@@ -1,28 +1,25 @@
-# Analysis
+# Análisis de la solución
 
-## Objective
+## Objetivo
 
-Refactor the Gilded Rose inventory update logic while improving
-maintainability and readability.
+El objetivo de esta refactorización es mejorar la legibilidad y mantenibilidad
+del código original de la kata Gilded Rose.
 
-## Approach
+## Estrategia utilizada
 
-The solution uses a Strategy-style architecture where each item type
-delegates its behaviour to a dedicated handler.
+Se ha aplicado una solución basada en el patrón Strategy.
 
-## Benefits
+Cada tipo de objeto dispone de una clase responsable de actualizar sus
+atributos, evitando largas cadenas de condiciones.
 
-- Reduced cyclomatic complexity.
-- Better separation of responsibilities.
-- Easier extension for future item types.
-- Improved unit test isolation.
+## Mejoras obtenidas
 
-## Trade-offs
+- Menor complejidad ciclomática.
+- Mejor separación de responsabilidades.
+- Mayor facilidad para añadir nuevos tipos de objetos.
+- Código más sencillo de probar.
 
-- More classes than a single-method solution.
-- Slightly higher structural complexity.
+## Conclusión
 
-## Conclusion
-
-The chosen architecture prioritizes maintainability and extensibility over
-compactness while preserving the behaviour required by the kata.
+La solución mantiene el comportamiento esperado por la kata y mejora
+la organización interna del código.
